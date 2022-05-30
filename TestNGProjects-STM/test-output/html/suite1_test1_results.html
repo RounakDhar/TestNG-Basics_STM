@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">Reports Testing</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">ui.ReportsTest</th>
+	    <th id="testClassNameId" hidden="true">ReportsTest</th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">UI Test Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\Users\ASUS\eclipse-workspace\TestNGProjects-SoftwareTestingMentor\testng.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">testng.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:00</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>4</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="yellow">SKIP</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+									<tr>
+		<td class="time">1653468329656</td>
+		<td class="header failedConfig" colspan="4" onClick="toggleElement('838889fa-757e-4ec1-af2d-fa5ebf30be0f','block');changeSingleIcon('span-838889fa-757e-4ec1-af2d-fa5ebf30be0f');" title="Click to expand/collapse" style="cursor: pointer;">
+		<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>ui.ReportsTest</div>
+		<div style="float:right;">@BeforeSuite &nbsp;&nbsp;<span id='span-838889fa-757e-4ec1-af2d-fa5ebf30be0f' class="glyphicon glyphicon-menu-down"></span></div>
+		</td>
+	</tr>
+			<tr>
+		<td class="time">1653468329656</td>
+		<td class="methodConfiguration">
+				<span class="description"><b>Class: </b>class common.BaseTest</span><br>
+		<span class="description"><b>Method: </b>launchbrowser</span><br>
+				<span class="duration"><b>Duration: </b>0.033s</span><br>
+		</td>
+		<td class="resultConfiguration">
+										<div class="stackTrace" id="838889fa-757e-4ec1-af2d-fa5ebf30be0f">
+								<a href="javascript:toggleElement('exception-838889fa-757e-4ec1-af2d-fa5ebf30be0f','block')" title="Click to expand/collapse"><b>java.lang.ExceptionInInitializerError</b></a><br>
+		    <div class="stackTrace" id="exception-838889fa-757e-4ec1-af2d-fa5ebf30be0f">
+							io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)<br>
+							io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)<br>
+							io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)<br>
+							io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)<br>
+							io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)<br>
+							common.BaseTest.launchbrowser(BaseTest.java:17)<br>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>
+							java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>
+							java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>
+							org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br>
+							org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br>
+							org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br>
+							org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br>
+							org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)<br>
+							org.testng.SuiteRunner.run(SuiteRunner.java:276)<br>
+							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>
+							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br>
+							org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br>
+							org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br>
+							org.testng.TestNG.runSuites(TestNG.java:1063)<br>
+							org.testng.TestNG.run(TestNG.java:1031)<br>
+							org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>
+							org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>
+							org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+									    <b>Caused by: </b> <a href="javascript:toggleElement('causedBy-838889fa-757e-4ec1-af2d-fa5ebf30be0f','block')" title="Click to expand/collapse">java.lang.NumberFormatException: multiple points</a><br>
+			    <div class="stackTrace" id="causedBy-838889fa-757e-4ec1-af2d-fa5ebf30be0f">
+									java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)<br>
+									java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)<br>
+									java.base/java.lang.Float.parseFloat(Float.java:461)<br>
+									org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)<br>
+									org.apache.commons.lang.SystemUtils.&lt;clinit&gt;(SystemUtils.java:817)<br>
+									io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)<br>
+									io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)<br>
+									io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)<br>
+									io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)<br>
+									io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)<br>
+									common.BaseTest.launchbrowser(BaseTest.java:17)<br>
+									java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>
+									java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>
+									java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>
+									java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>
+									org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br>
+									org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br>
+									org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br>
+									org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br>
+									org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)<br>
+									org.testng.SuiteRunner.run(SuiteRunner.java:276)<br>
+									org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br>
+									org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br>
+									org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br>
+									org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br>
+									org.testng.TestNG.runSuites(TestNG.java:1063)<br>
+									org.testng.TestNG.run(TestNG.java:1031)<br>
+									org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>
+									org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>
+									org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+								</div>
+						</div>
+				</div>
+		</td>
+	</tr>
+						
+					    				<tr>
+		<td class="time">1653468329867</td>
+		<td class="header skippedConfig" colspan="4" onClick="toggleElement('34439de2-67e0-4ed9-80b5-6ddb98cd5e19','block');changeSingleIcon('span-34439de2-67e0-4ed9-80b5-6ddb98cd5e19');" title="Click to expand/collapse">
+		<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>ui.ReportsTest</div>
+		<div style="float:right;">@AfterSuite &nbsp;&nbsp;<span id='span-34439de2-67e0-4ed9-80b5-6ddb98cd5e19' class="glyphicon glyphicon-menu-down"></span></div>
+		</td>
+	</tr>
+		<tr>
+		<td class="time">1653468329867</td>
+		<td class="methodConfiguration">
+				<span class="description"><b>Class: </b>class common.BaseTest</span><br>
+		<span class="description"><b>Method: </b>closebrowser</span><br>
+				<span class="duration"><b>Duration: </b>0.000s</span><br>
+		</td>
+		<td class="resultConfiguration">
+				 														<div class="stackTrace" id="34439de2-67e0-4ed9-80b5-6ddb98cd5e19">
+							</div>
+		</td>
+	</tr>
+	    	    		
+				
+				
+											<tr>
+	<td class="time">1653468329764</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('b83ae315-a209-42ab-9f30-ab66b176bffd','block');changeSingleIcon('span-b83ae315-a209-42ab-9f30-ab66b176bffd');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>ui.ReportsTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-b83ae315-a209-42ab-9f30-ab66b176bffd' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1653468329764</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>reporterTest3</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.000s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="b83ae315-a209-42ab-9f30-ab66b176bffd" style="display: block;">
+						<a href="javascript:toggleElement('exception-b83ae315-a209-42ab-9f30-ab66b176bffd','block')" title="Click to expand/collapse"><b>java.lang.ExceptionInInitializerError</b></a><br/>
+		<div class="stackTrace" id="exception-b83ae315-a209-42ab-9f30-ab66b176bffd">
+					io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)<br/>
+					io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)<br/>
+					io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)<br/>
+					io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)<br/>
+					io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)<br/>
+					common.BaseTest.launchbrowser(BaseTest.java:17)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br/>
+					java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br/>
+					org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br/>
+					org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+					org.testng.TestNG.run(TestNG.java:1031)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-b83ae315-a209-42ab-9f30-ab66b176bffd','block')" title="Click to expand/collapse">java.lang.NumberFormatException: multiple points</a><br/>
+			<div class="stackTrace" id="causedBy-b83ae315-a209-42ab-9f30-ab66b176bffd">
+							java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)<br/>
+							java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)<br/>
+							java.base/java.lang.Float.parseFloat(Float.java:461)<br/>
+							org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)<br/>
+							org.apache.commons.lang.SystemUtils.&lt;clinit&gt;(SystemUtils.java:817)<br/>
+							io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)<br/>
+							io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)<br/>
+							io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)<br/>
+							io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)<br/>
+							io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)<br/>
+							common.BaseTest.launchbrowser(BaseTest.java:17)<br/>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br/>
+							java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+							java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>
+							org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+							org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br/>
+							org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br/>
+							org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br/>
+							org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)<br/>
+							org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+							org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+							org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+							org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+							org.testng.TestNG.run(TestNG.java:1031)<br/>
+							org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+							org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+							org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1653468329758</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('60f95205-79c7-4e55-bde0-8964254b0805','block');changeSingleIcon('span-60f95205-79c7-4e55-bde0-8964254b0805');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>ui.ReportsTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-60f95205-79c7-4e55-bde0-8964254b0805' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1653468329758</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>reporterTest2</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.000s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="60f95205-79c7-4e55-bde0-8964254b0805" style="display: block;">
+						<a href="javascript:toggleElement('exception-60f95205-79c7-4e55-bde0-8964254b0805','block')" title="Click to expand/collapse"><b>java.lang.ExceptionInInitializerError</b></a><br/>
+		<div class="stackTrace" id="exception-60f95205-79c7-4e55-bde0-8964254b0805">
+					io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)<br/>
+					io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)<br/>
+					io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)<br/>
+					io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)<br/>
+					io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)<br/>
+					common.BaseTest.launchbrowser(BaseTest.java:17)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br/>
+					java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br/>
+					org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br/>
+					org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+					org.testng.TestNG.run(TestNG.java:1031)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-60f95205-79c7-4e55-bde0-8964254b0805','block')" title="Click to expand/collapse">java.lang.NumberFormatException: multiple points</a><br/>
+			<div class="stackTrace" id="causedBy-60f95205-79c7-4e55-bde0-8964254b0805">
+							java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)<br/>
+							java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)<br/>
+							java.base/java.lang.Float.parseFloat(Float.java:461)<br/>
+							org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)<br/>
+							org.apache.commons.lang.SystemUtils.&lt;clinit&gt;(SystemUtils.java:817)<br/>
+							io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)<br/>
+							io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)<br/>
+							io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)<br/>
+							io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)<br/>
+							io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)<br/>
+							common.BaseTest.launchbrowser(BaseTest.java:17)<br/>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br/>
+							java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+							java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>
+							org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+							org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br/>
+							org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br/>
+							org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br/>
+							org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)<br/>
+							org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+							org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+							org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+							org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+							org.testng.TestNG.run(TestNG.java:1031)<br/>
+							org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+							org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+							org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1653468329750</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('813a78ca-07ec-4a1a-935c-1c84d8281412','block');changeSingleIcon('span-813a78ca-07ec-4a1a-935c-1c84d8281412');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>ui.ReportsTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-813a78ca-07ec-4a1a-935c-1c84d8281412' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1653468329750</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>reporterTest1</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.000s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="813a78ca-07ec-4a1a-935c-1c84d8281412" style="display: block;">
+						<a href="javascript:toggleElement('exception-813a78ca-07ec-4a1a-935c-1c84d8281412','block')" title="Click to expand/collapse"><b>java.lang.ExceptionInInitializerError</b></a><br/>
+		<div class="stackTrace" id="exception-813a78ca-07ec-4a1a-935c-1c84d8281412">
+					io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)<br/>
+					io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)<br/>
+					io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)<br/>
+					io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)<br/>
+					io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)<br/>
+					common.BaseTest.launchbrowser(BaseTest.java:17)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br/>
+					java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br/>
+					org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br/>
+					org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+					org.testng.TestNG.run(TestNG.java:1031)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-813a78ca-07ec-4a1a-935c-1c84d8281412','block')" title="Click to expand/collapse">java.lang.NumberFormatException: multiple points</a><br/>
+			<div class="stackTrace" id="causedBy-813a78ca-07ec-4a1a-935c-1c84d8281412">
+							java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)<br/>
+							java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)<br/>
+							java.base/java.lang.Float.parseFloat(Float.java:461)<br/>
+							org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)<br/>
+							org.apache.commons.lang.SystemUtils.&lt;clinit&gt;(SystemUtils.java:817)<br/>
+							io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)<br/>
+							io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)<br/>
+							io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)<br/>
+							io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)<br/>
+							io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)<br/>
+							common.BaseTest.launchbrowser(BaseTest.java:17)<br/>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br/>
+							java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+							java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>
+							org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+							org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br/>
+							org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br/>
+							org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br/>
+							org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)<br/>
+							org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+							org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+							org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+							org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+							org.testng.TestNG.run(TestNG.java:1031)<br/>
+							org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+							org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+							org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1653468329770</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('cbbf3b40-7707-4091-b329-65c743d7e38c','block');changeSingleIcon('span-cbbf3b40-7707-4091-b329-65c743d7e38c');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>ui.ReportsTest</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-cbbf3b40-7707-4091-b329-65c743d7e38c' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1653468329770</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>reporterTest4</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>0.000s</span><br>
+	</td>
+	<td class="result">
+		 									<div class="stackTrace" id="cbbf3b40-7707-4091-b329-65c743d7e38c" style="display: block;">
+												==============================================================================================<br>
+												Total Passed: 0(+0), Failures: 0(+0), Skips: 4(+4)<br>
+												==============================================================================================<br>
+									<a href="javascript:toggleElement('exception-cbbf3b40-7707-4091-b329-65c743d7e38c','block')" title="Click to expand/collapse"><b>java.lang.ExceptionInInitializerError</b></a><br/>
+		<div class="stackTrace" id="exception-cbbf3b40-7707-4091-b329-65c743d7e38c">
+					io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)<br/>
+					io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)<br/>
+					io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)<br/>
+					io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)<br/>
+					io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)<br/>
+					common.BaseTest.launchbrowser(BaseTest.java:17)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+					java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br/>
+					java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+					org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br/>
+					org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br/>
+					org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+					org.testng.TestNG.run(TestNG.java:1031)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+							<b>Caused by: </b> <a href="javascript:toggleElement('causedBy-cbbf3b40-7707-4091-b329-65c743d7e38c','block')" title="Click to expand/collapse">java.lang.NumberFormatException: multiple points</a><br/>
+			<div class="stackTrace" id="causedBy-cbbf3b40-7707-4091-b329-65c743d7e38c">
+							java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)<br/>
+							java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)<br/>
+							java.base/java.lang.Float.parseFloat(Float.java:461)<br/>
+							org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)<br/>
+							org.apache.commons.lang.SystemUtils.&lt;clinit&gt;(SystemUtils.java:817)<br/>
+							io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)<br/>
+							io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)<br/>
+							io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)<br/>
+							io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)<br/>
+							io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)<br/>
+							common.BaseTest.launchbrowser(BaseTest.java:17)<br/>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
+							java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br/>
+							java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br/>
+							java.base/java.lang.reflect.Method.invoke(Method.java:564)<br/>
+							org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br/>
+							org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)<br/>
+							org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)<br/>
+							org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)<br/>
+							org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)<br/>
+							org.testng.SuiteRunner.run(SuiteRunner.java:276)<br/>
+							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br/>
+							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br/>
+							org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br/>
+							org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br/>
+							org.testng.TestNG.runSuites(TestNG.java:1063)<br/>
+							org.testng.TestNG.run(TestNG.java:1031)<br/>
+							org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+							org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+							org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+				</div>
+		</td>
+	</div>
+</tr>
+						
+			  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>

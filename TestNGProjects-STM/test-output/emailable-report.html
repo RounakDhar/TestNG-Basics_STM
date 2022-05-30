@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">UI Test Suite</th></tr>
+<tr><td><a href="#t0">Reports Testing</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">77</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">UI Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Reports Testing &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">ui.ReportsTest</td><td><a href="#m0">launchbrowser</a></td><td rowspan="1">1653468329656</td><td rowspan="1">33</td></tr><tr><th colspan="4">Reports Testing &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">ui.ReportsTest</td><td><a href="#m1">closebrowser</a></td><td rowspan="1">1653468329867</td><td rowspan="1">-1653468329867</td></tr><tr><th colspan="4">Reports Testing &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">ui.ReportsTest</td><td><a href="#m2">reporterTest1</a></td><td rowspan="1">1653468329750</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">reporterTest2</a></td><td rowspan="1">1653468329758</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">reporterTest3</a></td><td rowspan="1">1653468329764</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">reporterTest4</a></td><td rowspan="1">1653468329770</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Reports Testing</h2><h3 id="m0">ui.ReportsTest#launchbrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
+	at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)
+	at io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)
+	at io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)
+	at io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)
+	at common.BaseTest.launchbrowser(BaseTest.java:17)
+Caused by: java.lang.NumberFormatException: multiple points
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:461)
+	at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)
+	at org.apache.commons.lang.SystemUtils.&lt;clinit&gt;(SystemUtils.java:817)
+	... 25 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ui.ReportsTest#closebrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ui.ReportsTest#reporterTest1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
+	at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)
+	at io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)
+	at io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)
+	at io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)
+	at common.BaseTest.launchbrowser(BaseTest.java:17)
+Caused by: java.lang.NumberFormatException: multiple points
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:461)
+	at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)
+	at org.apache.commons.lang.SystemUtils.&lt;clinit&gt;(SystemUtils.java:817)
+	... 25 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ui.ReportsTest#reporterTest2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
+	at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)
+	at io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)
+	at io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)
+	at io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)
+	at common.BaseTest.launchbrowser(BaseTest.java:17)
+Caused by: java.lang.NumberFormatException: multiple points
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:461)
+	at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)
+	at org.apache.commons.lang.SystemUtils.&lt;clinit&gt;(SystemUtils.java:817)
+	... 25 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ui.ReportsTest#reporterTest3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
+	at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)
+	at io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)
+	at io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)
+	at io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)
+	at common.BaseTest.launchbrowser(BaseTest.java:17)
+Caused by: java.lang.NumberFormatException: multiple points
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:461)
+	at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)
+	at org.apache.commons.lang.SystemUtils.&lt;clinit&gt;(SystemUtils.java:817)
+	... 25 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ui.ReportsTest#reporterTest4</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">==============================================================================================<br/>Total Passed: 0(+0), Failures: 0(+0), Skips: 4(+4)<br/>==============================================================================================</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
+	at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:346)
+	at io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:103)
+	at io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:189)
+	at io.github.bonigarcia.wdm.managers.FirefoxDriverManager.&lt;init&gt;(FirefoxDriverManager.java:41)
+	at io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver(WebDriverManager.java:212)
+	at common.BaseTest.launchbrowser(BaseTest.java:17)
+Caused by: java.lang.NumberFormatException: multiple points
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:461)
+	at org.apache.commons.lang.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1117)
+	at org.apache.commons.lang.SystemUtils.&lt;clinit&gt;(SystemUtils.java:817)
+	... 25 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
